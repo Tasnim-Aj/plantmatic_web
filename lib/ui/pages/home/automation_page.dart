@@ -25,7 +25,7 @@ class _AutomationPageState extends State<AutomationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -49,7 +49,7 @@ class _AutomationPageState extends State<AutomationPage> {
                 'Automation Engineering', 'home / automation engineering'),
             Container(
               // height: 500,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -80,7 +80,7 @@ class _AutomationPageState extends State<AutomationPage> {
             ),
             Container(
               // height: 500,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -113,7 +113,7 @@ class _AutomationPageState extends State<AutomationPage> {
             ),
             Container(
               // height: 500,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -148,7 +148,7 @@ class _AutomationPageState extends State<AutomationPage> {
                   "Full engineering package including but not limited to the following deliverables:",
             ),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل

@@ -13,8 +13,8 @@ class CustomExpansionTile extends StatefulWidget {
     this.backgroundColor,
     this.textColor,
     this.titleFontSize,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   _CustomExpansionTileState createState() => _CustomExpansionTileState();
@@ -30,7 +30,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> {
     final titleFontSize = widget.titleFontSize ?? 18;
 
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.symmetric(vertical: 10),
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(50),
@@ -39,7 +39,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> {
             color: Colors.black.withOpacity(0.05),
             blurRadius: 4,
             spreadRadius: 1,
-            offset: Offset(0, 2),
+            offset: const Offset(0, 2),
           ),
         ],
       ),
@@ -56,10 +56,10 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> {
               decoration: BoxDecoration(
                 color: isExpanded ? Colors.blue.shade700 : backgroundColor,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(50),
-                  topRight: Radius.circular(50),
-                  bottomLeft: isExpanded ? Radius.zero : Radius.circular(50),
-                  bottomRight: isExpanded ? Radius.zero : Radius.circular(50),
+                  topLeft: const Radius.circular(50),
+                  topRight: const Radius.circular(50),
+                  bottomLeft: isExpanded ? Radius.zero : const Radius.circular(50),
+                  bottomRight: isExpanded ? Radius.zero : const Radius.circular(50),
                 ),
                 boxShadow: [
                   BoxShadow(
@@ -70,7 +70,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> {
                   ),
                 ],
               ),
-              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -88,7 +88,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> {
                       color: Colors.white.withOpacity(0.2),
                       shape: BoxShape.circle,
                     ),
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: Icon(
                       isExpanded
                           ? Icons.keyboard_arrow_up
@@ -102,10 +102,10 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> {
             ),
           ),
           AnimatedCrossFade(
-            duration: Duration(milliseconds: 300),
+            duration: const Duration(milliseconds: 300),
             firstChild: Container(),
             secondChild: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
               child: Column(children: widget.children),
             ),
             crossFadeState: isExpanded

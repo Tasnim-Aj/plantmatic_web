@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ValuesPage extends StatelessWidget {
+  const ValuesPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Our Values'),
+        title: const Text('Our Values'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -14,17 +16,17 @@ class ValuesPage extends StatelessWidget {
             // Banner Section
             Container(
               height: 200,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/banners/vision_mission.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Page Title
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -36,16 +38,16 @@ class ValuesPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Individual Behaviour Section
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
                 'Individual Behaviour',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Row(
               children: [
                 _buildValueItem(
@@ -80,19 +82,19 @@ class ValuesPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Organisational Behaviour Section
             Container(
               color: Colors.grey[200],
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Organisational Behaviour',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       _buildValueItem(
@@ -134,19 +136,19 @@ class ValuesPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Business Behaviour Section
             Container(
               color: Colors.grey[200],
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Business Behaviour',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       _buildValueItem(
@@ -191,8 +193,8 @@ class ValuesPage extends StatelessWidget {
   }) {
     return Expanded(
       child: Container(
-        margin: EdgeInsets.all(8),
-        decoration: BoxDecoration(
+        margin: const EdgeInsets.all(8),
+        decoration: const BoxDecoration(
           border: Border(
             right: BorderSide(color: Colors.grey, width: 1),
           ),
@@ -208,20 +210,20 @@ class ValuesPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Image.asset(
               imagePath,
               height: 100,
               width: 100,
               fit: BoxFit.cover,
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             RichText(
               text: TextSpan(
                 children: [
                   TextSpan(
                     text: '$number ',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
                       fontSize: 18,
@@ -229,7 +231,7 @@ class ValuesPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text: title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                     ),
@@ -237,15 +239,15 @@ class ValuesPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: items.map((item) {
                 return Padding(
-                  padding: EdgeInsets.symmetric(vertical: 4),
+                  padding: const EdgeInsets.symmetric(vertical: 4),
                   child: Text(
                     '• $item',
-                    style: TextStyle(fontSize: 14),
+                    style: const TextStyle(fontSize: 14),
                   ),
                 );
               }).toList(),
@@ -258,9 +260,11 @@ class ValuesPage extends StatelessWidget {
 }
 
 class Breadcrumb extends StatelessWidget {
+  const Breadcrumb({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
         Text('Who We Are'),
         Icon(Icons.chevron_right),

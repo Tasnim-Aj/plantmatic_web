@@ -25,11 +25,11 @@ class AboutSection extends StatelessWidget {
                       Shadow(
                         color: Colors.black.withOpacity(0.2),
                         blurRadius: 4,
-                        offset: Offset(2, 2),
+                        offset: const Offset(2, 2),
                       ),
                     ],
                   ),
-                  children: [
+                  children: const [
                     TextSpan(
                       text: "US",
                       style: TextStyle(
@@ -39,7 +39,7 @@ class AboutSection extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

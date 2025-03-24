@@ -11,7 +11,7 @@ class AppStyles {
       Shadow(
         color: Colors.black.withOpacity(0.2),
         blurRadius: 4,
-        offset: Offset(2, 2),
+        offset: const Offset(2, 2),
       ),
     ],
   );

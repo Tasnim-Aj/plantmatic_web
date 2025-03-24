@@ -27,10 +27,10 @@ class _FmsPageState extends State<FmsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 250, vertical: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 250, vertical: 24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -122,7 +122,7 @@ Widget sectionOne(
         ? [
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
@@ -131,7 +131,7 @@ Widget sectionOne(
                       color: Colors.black.withOpacity(0.1),
                       blurRadius: 6,
                       spreadRadius: 2,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                 ),
@@ -159,7 +159,7 @@ Widget sectionOne(
             const SizedBox(width: 40),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
@@ -168,7 +168,7 @@ Widget sectionOne(
                       color: Colors.black.withOpacity(0.1),
                       blurRadius: 6,
                       spreadRadius: 2,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                 ),
@@ -205,7 +205,7 @@ Widget sectionTwo({
         ? [
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
@@ -214,7 +214,7 @@ Widget sectionTwo({
                       color: Colors.black.withOpacity(0.1),
                       blurRadius: 6,
                       spreadRadius: 2,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                 ),
@@ -238,7 +238,7 @@ Widget sectionTwo({
             const SizedBox(width: 40),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
@@ -247,7 +247,7 @@ Widget sectionTwo({
                       color: Colors.black.withOpacity(0.1),
                       blurRadius: 6,
                       spreadRadius: 2,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                 ),

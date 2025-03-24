@@ -7,7 +7,7 @@ class ManufacturerCard extends StatefulWidget {
   final String companyImage;
   final String detailsPageRoute;
 
-  const ManufacturerCard({
+  const ManufacturerCard({super.key, 
     required this.companyImage,
     required this.detailsPageRoute,
   });

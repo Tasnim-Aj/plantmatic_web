@@ -132,7 +132,7 @@ class _VegaPageState extends State<VegaPage> {
                   const EdgeInsets.symmetric(horizontal: 250, vertical: 16),
               child: Column(
                 children: [
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'About VEGA',
                     children: [
                       Padding(
@@ -145,7 +145,7 @@ class _VegaPageState extends State<VegaPage> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   _buildSolutionsSection(),
@@ -163,7 +163,7 @@ class _VegaPageState extends State<VegaPage> {
 
   Widget _buildSolutionsSection() {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
@@ -172,7 +172,7 @@ class _VegaPageState extends State<VegaPage> {
             color: Colors.black.withOpacity(0.1),
             blurRadius: 6,
             spreadRadius: 2,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),

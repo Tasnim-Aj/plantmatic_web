@@ -6,7 +6,7 @@ import '../../widgets/silderWidget.dart';
 import '../header/header_section_old.dart';
 
 class ElectricalEngineeringPage extends StatefulWidget {
-  ElectricalEngineeringPage({super.key});
+  const ElectricalEngineeringPage({super.key});
 
   @override
   State<ElectricalEngineeringPage> createState() =>
@@ -51,7 +51,7 @@ class _ElectricalEngineeringPageState extends State<ElectricalEngineeringPage> {
                 'Electrical Engineering', 'home / electrical engineering'),
             Container(
               height: 400,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -80,7 +80,7 @@ class _ElectricalEngineeringPageState extends State<ElectricalEngineeringPage> {
             ),
             Container(
               height: 400,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -113,7 +113,7 @@ class _ElectricalEngineeringPageState extends State<ElectricalEngineeringPage> {
             ),
             Container(
               height: 400,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -144,7 +144,7 @@ class _ElectricalEngineeringPageState extends State<ElectricalEngineeringPage> {
             ),
             Container(
               height: 400,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل

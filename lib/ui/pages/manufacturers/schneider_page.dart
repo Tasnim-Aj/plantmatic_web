@@ -54,7 +54,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
               padding: const EdgeInsets.symmetric(horizontal: 250),
               child: Column(
                 children: [
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'About Schneider',
                     children: [
                       Padding(
@@ -66,7 +66,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'SCADA System',
                     children: [
                       Padding(
@@ -133,7 +133,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                           )),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'PLC Systems',
                     children: [
                       Padding(
@@ -163,7 +163,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Small size PLC systems',
                     children: [
                       Padding(
@@ -193,7 +193,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'High Scale PLC Systems',
                     children: [
                       Padding(
@@ -207,7 +207,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Key Features',
                     children: [
                       ListTile(
@@ -292,7 +292,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                           )),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Networking Devices',
                     children: [
                       Padding(
@@ -376,7 +376,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                           )),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'EcoStruxure™ Systems by Schneider Electric',
                     children: [
                       Padding(
@@ -388,7 +388,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Key Components of EcoStruxure',
                     children: [
                       ListTile(
@@ -433,7 +433,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Benefits of EcoStruxure™ PROCESS',
                     children: [
                       ListTile(
@@ -526,7 +526,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
 
   Widget _buildSolutionsSection() {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         // color: Colors.grey.shade100,
@@ -537,7 +537,7 @@ class _SchneiderPageState extends State<SchneiderPage> {
             color: Colors.black.withOpacity(0.1),
             blurRadius: 6,
             spreadRadius: 2,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),

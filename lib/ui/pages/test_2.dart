@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: KeyFactsPage(),
   ));
 }
 
 class KeyFactsPage extends StatelessWidget {
+  const KeyFactsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Key Facts'),
+        title: const Text('Key Facts'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -20,17 +22,17 @@ class KeyFactsPage extends StatelessWidget {
             // Banner Section
             Container(
               height: 200,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/banners/vision_mission.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Page Title
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -42,11 +44,11 @@ class KeyFactsPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Key Facts Section
             Container(
-              padding: EdgeInsets.all(16),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.all(16),
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/bg/keyfacts_bg.png'),
                   fit: BoxFit.cover,
@@ -110,19 +112,19 @@ class KeyFactsPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Our Buyers Section
             Container(
               color: Colors.grey[200],
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Our Buyers',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       _buildBuyer(
@@ -178,18 +180,18 @@ class KeyFactsPage extends StatelessWidget {
           height: 50,
           width: 50,
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           title,
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           description,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 14),
+          style: const TextStyle(fontSize: 14),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }
@@ -202,7 +204,7 @@ class KeyFactsPage extends StatelessWidget {
   }) {
     return Expanded(
       child: Container(
-        margin: EdgeInsets.all(8),
+        margin: const EdgeInsets.all(8),
         child: Column(
           children: [
             Container(
@@ -215,23 +217,23 @@ class KeyFactsPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
               name,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
               quantity,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 14),
+              style: const TextStyle(fontSize: 14),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
               period,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 14),
+              style: const TextStyle(fontSize: 14),
             ),
           ],
         ),
@@ -241,9 +243,11 @@ class KeyFactsPage extends StatelessWidget {
 }
 
 class Breadcrumb extends StatelessWidget {
+  const Breadcrumb({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
         Text('Who We Are'),
         Icon(Icons.chevron_right),

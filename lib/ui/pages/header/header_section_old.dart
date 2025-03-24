@@ -49,12 +49,17 @@ class _HeaderSectionState extends State<HeaderSection> {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Container(
-            padding: EdgeInsets.only(bottom: 5),
-            child: Image.asset(
-              'images/header/logo.png',
-              height: 50,
+            padding: const EdgeInsets.only(bottom: 5),
+            child: Image.network(
+              'https://i.postimg.cc/Wbhs1mPF/logo.png',
               width: 50,
+              height: 50,
             ),
+            // child: Image.asset(
+            //   'images/header/logo.png',
+            //   height: 50,
+            //   width: 50,
+            // ),
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.end,

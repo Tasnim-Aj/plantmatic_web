@@ -4,7 +4,7 @@ import 'package:plantmatic_web/ui/style/custom_color.dart';
 import '../header/header_section_old.dart';
 
 class TankGaugingPage extends StatefulWidget {
-  TankGaugingPage({super.key});
+  const TankGaugingPage({super.key});
 
   @override
   State<TankGaugingPage> createState() => _TankGaugingPageState();
@@ -28,7 +28,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: Column(
         children: [
           HeaderSection(
@@ -39,14 +39,14 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
             onReferenceTap: () => _scrollToSection(_referencesKey),
             // onContactTap: () => _scrollToSection(_contactKey),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 8.0, horizontal: 200),
+                  const Padding(
+                    padding:
+                        EdgeInsets.symmetric(vertical: 8.0, horizontal: 200),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -81,28 +81,35 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
                                     "Besides precision level gauging, temperature measurements are essential in assessing tank contents accurately. All liquids have a thermal expansion coefficient and proper volume compensation needs to be applied when transferring volumes at different temperature conditions. A pressure measurement of the liquid head is often added to provide a current assessment of the average observed density and to calculate the product mass. Modern tank gauging systems digitize the tank measurement and digitally transmit the tank information to a control room where the liquid volume and mass information is distributed to users of the inventory data.",
                               ),
                             ),
-                            SizedBox(width: 16), // مسافة بين النص والصورة
+                            const SizedBox(width: 16), // مسافة بين النص والصورة
                             // الصورة
                             Expanded(
-                              child: Image.asset(
-                                'images/solution/tank_1.jpg',
+                              child: Image.network(
+                                'https://i.postimg.cc/TwLKbzzm/curso-rosemount-tank-gauging-esquema-scaled.jpg',
                                 fit: BoxFit.cover,
                               ),
+                              // child: Image.asset(
+                              //   'images/solution/tank_1.jpg',
+                              //   fit: BoxFit.cover,
+                              // ),
                             ),
                           ],
                         ),
-                        SizedBox(height: 48),
+                        const SizedBox(height: 48),
                         // Divider(
                         //   color: Colors.grey.shade200,
                         // ),
-                        SizedBox(height: 48),
+                        const SizedBox(height: 48),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(
-                                child:
-                                    Image.asset('images/solution/tank_2.jpg')),
-                            SizedBox(width: 16),
+                              child: Image.network(
+                                'https://i.postimg.cc/nLwsCFPp/engineer-s-guide-to-tank-gauging-en-175314.jpg',
+                              ),
+                              // Image.asset('images/solution/tank_2.jpg'),
+                            ),
+                            const SizedBox(width: 16),
                             Expanded(
                               child: _buildSection(
                                 title: 'Why to have tank gauging',
@@ -122,7 +129,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
                             ),
                           ],
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                         _buildSection(
                           title: 'Custody transfer',
                           paragraphs: [
@@ -132,7 +139,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
                               'Custody transfer requires the highest possible accuracy of the tank gauging system. The OIML standard R 85:2008 defines the requirements for tank gauges used for custody transfer.',
                           listItems: [],
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                         _buildSection(
                           title: 'API Related to the tank Gauging',
                           paragraphs: [
@@ -142,7 +149,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
                               'Chapter 3.3 Standard Practice for Level Measurement of Liquid Hydrocarbons in Stationary Pressurized Storage Tanks by Automatic Tank Gauging • Chapter 3.6 Measurement of Liquid Hydrocarbons by Hybrid Tank Measurement Systems • Chapter 7 Temperature Determination • Chapter 7.3 Temperature Determination – Fixed Automatic Tank Temperature Systems • API 2350 Overfill Protection for Storage Tanks in Petroleum Facilities',
                           listItems: [],
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
@@ -160,13 +167,15 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
                                 ],
                               ),
                             ),
-                            SizedBox(width: 16),
+                            const SizedBox(width: 16),
                             Expanded(
-                                child:
-                                    Image.asset('images/solution/tank_3.png')),
+                              child: Image.network(
+                                  'https://i.postimg.cc/1z4Xhx5T/prod-rmt-tank-storage-floating-roof-monitoring-data-6751870.png'),
+                              // Image.asset('images/solution/tank_3.png'),
+                            ),
                           ],
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                       ],
                     ),
                   ),
@@ -187,7 +196,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
     String? finalParagraph,
   }) {
     return Container(
-      padding: EdgeInsets.only(left: 24, right: 24, top: 24, bottom: 24),
+      padding: const EdgeInsets.only(left: 24, right: 24, top: 24, bottom: 24),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
@@ -196,7 +205,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
             color: Colors.black.withOpacity(0.1),
             blurRadius: 6,
             spreadRadius: 2,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -207,20 +216,20 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
           if (title != null)
             Text(
               title,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: CustomColor.primaryColor,
               ),
             ),
-          SizedBox(height: 16), // مسافة بين العنوان والنص
+          const SizedBox(height: 16), // مسافة بين العنوان والنص
           // الفقرات
           for (var paragraph in paragraphs!)
             Padding(
               padding: const EdgeInsets.only(bottom: 8),
               child: Text(
                 paragraph,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   color: Colors.black87,
                   height: 1.5,
@@ -230,7 +239,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
           // القائمة
           ListView(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             children: [
               for (var item in listItems) _buildListItem(item),
             ],
@@ -241,7 +250,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
               padding: const EdgeInsets.only(top: 16),
               child: Text(
                 finalParagraph,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   color: Colors.black87,
                   height: 1.5,
@@ -260,14 +269,14 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             '• ',
             style: TextStyle(fontSize: 16, color: Colors.black87),
           ),
           Expanded(
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16,
                 color: Colors.black87,
                 height: 1.5,

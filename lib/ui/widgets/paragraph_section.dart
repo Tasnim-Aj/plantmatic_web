@@ -10,7 +10,7 @@ class ParagraphSection extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 16),
       child: Text(
         text,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 16,
           color: Colors.black87,
           height: 1.5,

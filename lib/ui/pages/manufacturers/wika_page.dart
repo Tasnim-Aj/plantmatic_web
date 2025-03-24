@@ -47,7 +47,7 @@ class _WikaPageState extends State<WikaPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFFFFFF),
+        backgroundColor: const Color(0x0fffffff),
         // backgroundColor: Colors.grey[50],
         body: SingleChildScrollView(
           child: Column(
@@ -61,9 +61,9 @@ class _WikaPageState extends State<WikaPage> {
                   ),
                 ],
               ),
-              Padding(
+              const Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 12.0, horizontal: 250),
+                    EdgeInsets.symmetric(vertical: 12.0, horizontal: 250),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -92,7 +92,7 @@ class _WikaPageState extends State<WikaPage> {
                               'Oman LNG is committed to the highest possible standards in terms of governance practices, openness/transparency, honesty, accountability, professionalism and duty of care in delivering one\'s responsibilities as prescribed in Oman LNG\'s "Statement of General Business Principles" and "Code of Conduct".',
                         ),
                         // يمكنك إضافة المزيد من Custom ExpansionTiles هنا
-                        CustomExpansionTile(
+                        const CustomExpansionTile(
                           title: 'About WIKA',
                           children: [
                             Padding(
@@ -105,7 +105,7 @@ class _WikaPageState extends State<WikaPage> {
                             ),
                           ],
                         ),
-                        CustomExpansionTile(
+                        const CustomExpansionTile(
                           title: 'Our Success Factors',
                           children: [
                             Text(
@@ -114,7 +114,7 @@ class _WikaPageState extends State<WikaPage> {
                             ),
                           ],
                         ),
-                        CustomExpansionTile(
+                        const CustomExpansionTile(
                           title: 'Why Choose WIKA?',
                           children: [
                             ListTile(title: Text('✔ Reliable Partner')),
@@ -133,11 +133,11 @@ class _WikaPageState extends State<WikaPage> {
                                 title: Text('✔ Long-term Security of Supply')),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         _buildSolutionsSection(),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         // _buildReliablePartnerSection(),
@@ -153,7 +153,7 @@ class _WikaPageState extends State<WikaPage> {
 
   Widget _buildSolutionsSection() {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
@@ -162,7 +162,7 @@ class _WikaPageState extends State<WikaPage> {
             color: Colors.black.withOpacity(0.1),
             blurRadius: 6,
             spreadRadius: 2,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -294,7 +294,7 @@ Widget _buildCustomExpansionTile(
     {required String title, required String content}) {
   return Card(
     elevation: 2, // ظل خفيف
-    margin: EdgeInsets.only(bottom: 16), // مسافة بين العناصر
+    margin: const EdgeInsets.only(bottom: 16), // مسافة بين العناصر
     child: ExpansionTile(
       title: Text(
         title,
@@ -310,7 +310,7 @@ Widget _buildCustomExpansionTile(
           padding: const EdgeInsets.all(16.0),
           child: Text(
             content,
-            style: TextStyle(
+            style: const TextStyle(
               fontFamily: 'Fedra Sans',
               fontWeight: FontWeight.w300,
               fontSize: 16,

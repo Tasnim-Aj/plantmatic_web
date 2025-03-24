@@ -25,7 +25,7 @@ class _InstrumentationPageState extends State<InstrumentationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -48,7 +48,7 @@ class _InstrumentationPageState extends State<InstrumentationPage> {
             buildSectionPath('Instrumentation Engineering',
                 'home / instrumentation engineering'),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -84,7 +84,7 @@ class _InstrumentationPageState extends State<InstrumentationPage> {
               text: "Site activities including:",
             ),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -110,7 +110,7 @@ class _InstrumentationPageState extends State<InstrumentationPage> {
               ),
             ),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -142,7 +142,7 @@ class _InstrumentationPageState extends State<InstrumentationPage> {
               text: "Filed instruments calibration:",
             ),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل
@@ -173,7 +173,7 @@ class _InstrumentationPageState extends State<InstrumentationPage> {
               ),
             ),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter, // يبدأ من الأعلى
                   end: Alignment.bottomCenter, // ينتهي في الأسفل

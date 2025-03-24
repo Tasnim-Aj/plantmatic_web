@@ -27,7 +27,7 @@ class PanelBuildingPage extends StatelessWidget {
           image: 'images/about/tank_1.jpg',
           isImageRight: true,
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         sectionTwo(
@@ -53,7 +53,7 @@ class PanelBuildingPage extends StatelessWidget {
           image: 'images/about/tank_2.jpg',
           isImageRight: false,
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         sectionTwo(

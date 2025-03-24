@@ -4,7 +4,7 @@ import 'package:plantmatic_web/ui/style/custom_color.dart';
 import '../header/header_section_old.dart';
 
 class SteamGeneratorsPage extends StatefulWidget {
-  SteamGeneratorsPage({super.key});
+  const SteamGeneratorsPage({super.key});
 
   @override
   State<SteamGeneratorsPage> createState() => _SteamGeneratorsPageState();
@@ -28,7 +28,7 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: Column(
         children: [
           HeaderSection(
@@ -39,14 +39,14 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
             onReferenceTap: () => _scrollToSection(_referencesKey),
             // onContactTap: () => _scrollToSection(_contactKey),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 8.0, horizontal: 200),
+                  const Padding(
+                    padding:
+                        EdgeInsets.symmetric(vertical: 8.0, horizontal: 200),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -87,25 +87,30 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                                 ],
                               ),
                             ),
-                            SizedBox(width: 16), // مسافة بين النص والصورة
+                            const SizedBox(width: 16), // مسافة بين النص والصورة
                             // الصورة
                             Expanded(
-                              child: Image.asset(
-                                'images/solution/steam1.png',
-                                fit: BoxFit.cover,
-                              ),
+                              child: Image.network(
+                                  'https://i.postimg.cc/pLJcN71D/steam1.png'),
+                              // child: Image.asset(
+                              //   'images/solution/steam1.png',
+                              //   fit: BoxFit.cover,
+                              // ),
                             ),
                           ],
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             // النص
                             Expanded(
-                                child:
-                                    Image.asset('images/solution/steam2.png')),
-                            SizedBox(width: 16), // مسافة بين النص والصورة
+                              child: Image.network(
+                                  'https://i.postimg.cc/T1xWXksD/steam2.png'),
+                              // child:
+                              //     Image.asset('images/solution/steam2.png'),
+                            ),
+                            const SizedBox(width: 16), // مسافة بين النص والصورة
                             // الصورة
                             Expanded(
                               child: _buildSection(
@@ -132,7 +137,7 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                             ),
                           ],
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                         Column(
                           children: [
                             _buildSection(
@@ -156,21 +161,25 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                                 'ESD safety system SIL2 : for the safety interlock, BMS, safety chain.',
                               ],
                             ),
-                            SizedBox(height: 10),
-                            Image.asset('images/solution/steam2.png'),
+                            const SizedBox(height: 10),
+                            Image.network(
+                                'https://i.postimg.cc/T1xWXksD/steam2.png')
+                            // Image.asset('images/solution/steam2.png'),
                           ],
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(
-                              child: Image.asset(
-                                'images/solution/steam3.jpg', // مسار الصورة
-                                fit: BoxFit.cover,
-                              ),
+                              child: Image.network(
+                                  'https://i.postimg.cc/ZYfyQLcC/steam3.jpg'),
+                              // child: Image.asset(
+                              //   'images/solution/steam3.jpg', // مسار الصورة
+                              //   fit: BoxFit.cover,
+                              // ),
                             ),
-                            SizedBox(width: 16), // مسافة بين النص والصورة
+                            const SizedBox(width: 16), // مسافة بين النص والصورة
                             Expanded(
                               child: _buildSection(
                                 title: 'Control System Components:',
@@ -209,7 +218,7 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
     String? finalParagraph,
   }) {
     return Container(
-      padding: EdgeInsets.only(left: 24, right: 24, top: 24, bottom: 24),
+      padding: const EdgeInsets.only(left: 24, right: 24, top: 24, bottom: 24),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
@@ -218,7 +227,7 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
             color: Colors.black.withOpacity(0.1),
             blurRadius: 6,
             spreadRadius: 2,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -229,20 +238,20 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
           if (title != null)
             Text(
               title,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: CustomColor.primaryColor,
               ),
             ),
-          SizedBox(height: 16), // مسافة بين العنوان والنص
+          const SizedBox(height: 16), // مسافة بين العنوان والنص
           // الفقرات
           for (var paragraph in paragraphs!)
             Padding(
               padding: const EdgeInsets.only(bottom: 8),
               child: Text(
                 paragraph,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   color: Colors.black87,
                   height: 1.5,
@@ -252,7 +261,7 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
           // القائمة
           ListView(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             children: [
               for (var item in listItems) _buildListItem(item),
             ],
@@ -263,7 +272,7 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
               padding: const EdgeInsets.only(top: 16),
               child: Text(
                 finalParagraph,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   color: Colors.black87,
                   height: 1.5,
@@ -282,14 +291,14 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             '• ',
             style: TextStyle(fontSize: 16, color: Colors.black87),
           ),
           Expanded(
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16,
                 color: Colors.black87,
                 height: 1.5,

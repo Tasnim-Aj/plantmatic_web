@@ -6,7 +6,7 @@ import '../../widgets/section_path.dart';
 import '../header/header_section_old.dart';
 
 class SafetyPage extends StatefulWidget {
-  SafetyPage({super.key});
+  const SafetyPage({super.key});
 
   @override
   State<SafetyPage> createState() => _SafetyPageState();
@@ -43,7 +43,7 @@ class _SafetyPageState extends State<SafetyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: SingleChildScrollView(
         child: Stack(
           alignment: Alignment.bottomCenter,
@@ -58,9 +58,10 @@ class _SafetyPageState extends State<SafetyPage> {
                   onReferenceTap: () => _scrollToSection(_referencesKey),
                   // onContactTap: () => _scrollToSection(_contactKey),
                 ),
-                Image.asset(
-                  'images/electrical/slider4.png',
-                ),
+                Image.network('https://i.postimg.cc/TYzv2Z9F/slider4.png'),
+                // Image.asset(
+                //   'images/electrical/slider4.png',
+                // ),
                 // buildSlider([
                 //   // 'images/electrical/slider1.jpg',
                 //   // 'images/electrical/slider2.jpg',
@@ -107,8 +108,8 @@ class _SafetyPageState extends State<SafetyPage> {
                 //   ],
                 // ),
                 // const SizedBox(height: 10),
-                SizedBox(height: 40),
-                Container(
+                const SizedBox(height: 40),
+                SizedBox(
                   height: 800,
                   child: Column(
                     children: [
@@ -138,13 +139,18 @@ class _SafetyPageState extends State<SafetyPage> {
                           children: [
                             _buildSafetyContainer(
                                 Icons.fitness_center, "Safe Lifting"),
-                            SizedBox(width: 100),
-                            Image.asset(
-                              'images/about/safety.png',
-                              width: 500,
+                            const SizedBox(width: 100),
+                            Image.network(
+                              'https://i.postimg.cc/LXb0C1Qw/safety.png',
                               height: 500,
+                              width: 500,
                             ),
-                            SizedBox(width: 100),
+                            // Image.asset(
+                            //   'images/about/safety.png',
+                            //   width: 500,
+                            //   height: 500,
+                            // ),
+                            const SizedBox(width: 100),
                             _buildSafetyContainer(
                                 Icons.emergency, "Emergency Procedures"),
                           ],
@@ -167,7 +173,7 @@ class _SafetyPageState extends State<SafetyPage> {
                           ],
                         ),
                       ),
-                      Row(
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [],
@@ -175,11 +181,11 @@ class _SafetyPageState extends State<SafetyPage> {
                     ],
                   ),
                 ),
-                SizedBox(height: 80),
+                const SizedBox(height: 80),
                 // Add the wave animation below the grid
               ],
             ),
-            WaveAnimation(),
+            const WaveAnimation(),
           ],
         ),
       ),
@@ -189,7 +195,7 @@ class _SafetyPageState extends State<SafetyPage> {
   Widget _buildTitleText(String text) {
     return Text(
       text,
-      style: TextStyle(
+      style: const TextStyle(
         fontSize: 32,
         fontWeight: FontWeight.bold,
         color: Colors.blue,
@@ -203,7 +209,7 @@ class _SafetyPageState extends State<SafetyPage> {
         Container(
           height: 100,
           width: 100,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               shape: BoxShape.circle,
               border: Border(
                 bottom: BorderSide(color: Colors.blue),
@@ -217,7 +223,7 @@ class _SafetyPageState extends State<SafetyPage> {
             size: 50,
           ),
         ),
-        SizedBox(height: 5),
+        const SizedBox(height: 5),
         Text(text),
       ],
     );
@@ -278,6 +284,8 @@ class _SafetyPageState extends State<SafetyPage> {
 }
 
 class WaveAnimation extends StatefulWidget {
+  const WaveAnimation({super.key});
+
   @override
   _WaveAnimationState createState() => _WaveAnimationState();
 }
@@ -315,13 +323,13 @@ class _WaveAnimationState extends State<WaveAnimation>
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 200, // Set height for the wave animation
       child: AnimatedBuilder(
         animation: _controller,
         builder: (context, child) {
           return CustomPaint(
-            size: Size(double.infinity, double.infinity),
+            size: const Size(double.infinity, double.infinity),
             painter: WavePainter(
                 animationValue1: _animation1.value,
                 animationValue2: _animation2.value),

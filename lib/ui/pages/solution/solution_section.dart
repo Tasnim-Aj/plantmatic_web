@@ -19,7 +19,7 @@ class SolutionSection extends StatelessWidget {
               ShaderMask(
                 blendMode: BlendMode.srcIn,
                 shaderCallback: (Rect bounds) {
-                  return LinearGradient(
+                  return const LinearGradient(
                     colors: [Colors.blue, Colors.green], // الألوان المفضلة
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
@@ -30,7 +30,7 @@ class SolutionSection extends StatelessWidget {
                   style: AppStyles.titleSection.copyWith(color: Colors.white),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -44,7 +44,7 @@ class SolutionSection extends StatelessWidget {
                     Container(
                       width: 100,
                       height: 2,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         gradient: LinearGradient(
                           colors: [Colors.green, Colors.blue],
                           begin: Alignment.topLeft,

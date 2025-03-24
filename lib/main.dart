@@ -35,13 +35,13 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomePage(),
 
         /// home
-        '/electricalDetails': (context) => ElectricalEngineeringPage(),
+        '/electricalDetails': (context) => const ElectricalEngineeringPage(),
         '/automationDetails': (context) => const AutomationPage(),
         '/instrumentationDetails': (context) => const InstrumentationPage(),
 
         /// about
         '/orgDetails': (context) => const OrganizationPage(),
-        '/safetyDetails': (context) => SafetyPage(),
+        '/safetyDetails': (context) => const SafetyPage(),
 
         /// manufacturers
         '/wikaDetails': (context) => const WikaPage(),
@@ -51,10 +51,10 @@ class MyApp extends StatelessWidget {
         '/omcDetails': (context) => const OmcPage(),
 
         /// solution
-        '/tankDetails': (context) => TankGaugingPage(),
+        '/tankDetails': (context) => const TankGaugingPage(),
         '/fmsDetails': (context) => const FmsPage(),
         '/panelDetails': (context) => const PanelBuildingPage(),
-        '/steamDetails': (context) => SteamGeneratorsPage(),
+        '/steamDetails': (context) => const SteamGeneratorsPage(),
       },
     );
   }

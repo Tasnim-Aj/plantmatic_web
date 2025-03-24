@@ -39,7 +39,7 @@ class _OmcPageState extends State<OmcPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -53,7 +53,7 @@ class _OmcPageState extends State<OmcPage> {
               padding: const EdgeInsets.symmetric(horizontal: 250),
               child: Column(
                 children: [
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'About OMC',
                     children: [
                       Padding(
@@ -65,7 +65,7 @@ class _OmcPageState extends State<OmcPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Certifications & Compliance',
                     children: [
                       ListTile(
@@ -105,7 +105,7 @@ class _OmcPageState extends State<OmcPage> {
                               'API 602: Certification for valves used in the oil and gas industry, ensuring high performance and reliability under severe conditions.')),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'OMC Globe Control Valves',
                     children: [
                       Padding(
@@ -117,7 +117,7 @@ class _OmcPageState extends State<OmcPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Key Features of OMC Globe Control Valves',
                     children: [
                       ListTile(
@@ -146,7 +146,7 @@ class _OmcPageState extends State<OmcPage> {
                           title: Text('Durability and Reliability.')),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Types of Globe Control Valves by OMC',
                     children: [
                       Align(
@@ -183,11 +183,11 @@ class _OmcPageState extends State<OmcPage> {
                           title: Text('Anti-Cavitation Globe Control Valves.')),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   _buildSolutionsSection(),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                 ],
@@ -201,7 +201,7 @@ class _OmcPageState extends State<OmcPage> {
 
   Widget _buildSolutionsSection() {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         // color: Colors.grey.shade100,
@@ -212,7 +212,7 @@ class _OmcPageState extends State<OmcPage> {
             color: Colors.black.withOpacity(0.1),
             blurRadius: 6,
             spreadRadius: 2,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),

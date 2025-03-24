@@ -24,7 +24,7 @@ class _OrganizationPageState extends State<OrganizationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -35,9 +35,10 @@ class _OrganizationPageState extends State<OrganizationPage> {
               onSolutionTap: () => _scrollToSection(_solutionKey),
               onReferenceTap: () => _scrollToSection(_referencesKey),
             ),
-            Image.asset(
-              'images/electrical/slider4.png',
-            ),
+            Image.network('https://i.postimg.cc/25CJVmBc/org.png'),
+            // Image.asset(
+            //   'images/electrical/slider4.png',
+            // ),
             buildSectionPath(
                 'Organization Chart', 'about / Organization Chart'),
             Padding(
@@ -52,7 +53,7 @@ class _OrganizationPageState extends State<OrganizationPage> {
                       color: Colors.black.withOpacity(0.1),
                       spreadRadius: 5,
                       blurRadius: 10,
-                      offset: Offset(0, 5),
+                      offset: const Offset(0, 5),
                     ),
                   ],
                   border: Border.all(

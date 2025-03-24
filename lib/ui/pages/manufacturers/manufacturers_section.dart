@@ -56,7 +56,7 @@ class _ManufacturersSectionState extends State<ManufacturersSection> {
   }
 
   Widget _buildManufacturers() {
-    return Center(
+    return const Center(
       child: Wrap(
         spacing: 20,
         runSpacing: 20,

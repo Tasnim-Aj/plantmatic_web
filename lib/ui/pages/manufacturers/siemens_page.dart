@@ -66,7 +66,7 @@ class _SiemensPageState extends State<SiemensPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFF),
+      backgroundColor: const Color(0x0fffffff),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -79,7 +79,7 @@ class _SiemensPageState extends State<SiemensPage> {
               padding: const EdgeInsets.symmetric(horizontal: 250),
               child: Column(
                 children: [
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'About SIEMENS',
                     children: [
                       Padding(
@@ -92,7 +92,7 @@ class _SiemensPageState extends State<SiemensPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'SIEMENS VFD’s',
                     children: [
                       Text(
@@ -101,7 +101,7 @@ class _SiemensPageState extends State<SiemensPage> {
                       ),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Key Features of Siemens VFDs',
                     children: [
                       ListTile(title: Text('🔹 Energy Efficiency')),
@@ -127,7 +127,7 @@ class _SiemensPageState extends State<SiemensPage> {
                               '🔹 Regenerative Energy Recovery: contributing to energy savings and reducing system load.')),
                     ],
                   ),
-                  CustomExpansionTile(
+                  const CustomExpansionTile(
                     title: 'Applications of Siemens VFDs',
                     children: [
                       ListTile(
@@ -153,7 +153,7 @@ class _SiemensPageState extends State<SiemensPage> {
                               '🔹 HVAC Systems: Siemens VFDs control motors in HVAC applications, including chillers, air handling units, and cooling towers.')),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   _buildSolutionsSection(),
@@ -171,7 +171,7 @@ class _SiemensPageState extends State<SiemensPage> {
 
   Widget _buildSolutionsSection() {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
@@ -180,7 +180,7 @@ class _SiemensPageState extends State<SiemensPage> {
             color: Colors.black.withOpacity(0.1),
             blurRadius: 6,
             spreadRadius: 2,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
