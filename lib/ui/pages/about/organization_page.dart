@@ -64,7 +64,8 @@ class _OrganizationPageState extends State<OrganizationPage> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.network(
-                    'https://ibb.co/wZrXprVG',
+                    'https://i.ibb.co/ymB1gBtv/org.png',
+                    // 'https://ibb.co/wZrXprVG',
                     fit: BoxFit.cover,
                   ),
                   // child: Image.asset(
