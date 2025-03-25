@@ -35,7 +35,7 @@ class _OrganizationPageState extends State<OrganizationPage> {
               onSolutionTap: () => _scrollToSection(_solutionKey),
               onReferenceTap: () => _scrollToSection(_referencesKey),
             ),
-            Image.network('https://i.postimg.cc/25CJVmBc/org.png'),
+            // Image.network('https://i.postimg.cc/25CJVmBc/org.png'),
             // Image.asset(
             //   'images/electrical/slider4.png',
             // ),
