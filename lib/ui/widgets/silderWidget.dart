@@ -16,7 +16,7 @@ Widget buildSlider(List<String> images) {
           // height: 400,
           // width: double.infinity,
           // width: MediaQuery.of(context).size.width,
-          fit: BoxFit.cover,
+          // fit: BoxFit.cover,
         );
       }).toList(),
     ),
