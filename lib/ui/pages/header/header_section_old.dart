@@ -35,8 +35,7 @@ class _HeaderSectionState extends State<HeaderSection> {
         left: 20,
       ),
       decoration: const BoxDecoration(
-        // color: Color(0xFFF2F2F2),
-        color: Colors.red,
+        color: Color(0xFFF2F2F2),
         boxShadow: [
           BoxShadow(
             color: Colors.black12,
