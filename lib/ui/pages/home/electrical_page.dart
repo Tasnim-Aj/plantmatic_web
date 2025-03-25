@@ -40,12 +40,10 @@ class _ElectricalEngineeringPageState extends State<ElectricalEngineeringPage> {
               // onContactTap: () => _scrollToSection(_contactKey),
             ),
             buildSlider([
-              // 'images/electrical/slider1.jpg',
-              // 'images/electrical/slider2.jpg',
-              // 'images/electrical/slider3.jpg',
-              'images/electrical/slider4.png',
-              // 'images/electrical/slider5.jpg',
-              'images/electrical/slider6.jpg',
+              'https://i.ibb.co/SkDG9bN/bar.jpg',
+              'https://i.ibb.co/qYMRWWQh/Types-Of-Testing-Devices-Used-In-Electrical-Substations.png',
+              'https://i.ibb.co/jkvZqSST/Electrical-Engineer.png',
+              'https://i.ibb.co/fVmx9Xnc/design-build.jpg'
             ]),
             buildSectionPath(
                 'Electrical Engineering', 'home / electrical engineering'),
