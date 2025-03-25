@@ -51,7 +51,7 @@ class _HeaderSectionState extends State<HeaderSection> {
           Container(
             padding: const EdgeInsets.only(bottom: 5),
             child: Image.network(
-              'https://i.postimg.cc/Wbhs1mPF/logo.png',
+              'https://i.ibb.co/BKBnMS7G/logo.png',
               width: 50,
               height: 50,
             ),
