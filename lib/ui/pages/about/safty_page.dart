@@ -58,7 +58,10 @@ class _SafetyPageState extends State<SafetyPage> {
                   onReferenceTap: () => _scrollToSection(_referencesKey),
                   // onContactTap: () => _scrollToSection(_contactKey),
                 ),
-                Image.network('https://i.postimg.cc/TYzv2Z9F/slider4.png'),
+                Image.network(
+                  'https://i.postimg.cc/TYzv2Z9F/slider4.png',
+                  fit: BoxFit.cover,
+                ),
                 // Image.asset(
                 //   'images/electrical/slider4.png',
                 // ),
@@ -141,7 +144,7 @@ class _SafetyPageState extends State<SafetyPage> {
                                 Icons.fitness_center, "Safe Lifting"),
                             const SizedBox(width: 100),
                             Image.network(
-                              'https://i.postimg.cc/LXb0C1Qw/safety.png',
+                              'https://i.ibb.co/4ZtNbJF4/20944200.png',
                               height: 500,
                               width: 500,
                             ),
