@@ -11,7 +11,7 @@ Widget buildSlider(List<String> images) {
       isLoop: true,
       autoPlayInterval: 5000,
       children: images.map((image) {
-        return Image.asset(
+        return Image.network(
           image,
           // height: 400,
           // width: double.infinity,

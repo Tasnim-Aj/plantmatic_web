@@ -15,9 +15,9 @@ class HomeSection extends StatelessWidget {
       child: Column(
         children: [
           buildSlider([
-            'images/slider/home-slider4.jpg',
-            'images/slider/home-slider4.jpg',
-            'images/slider/home-slider4.jpg',
+            'https://i.ibb.co/CsVNJT1F/home-slider4.jpg',
+            'https://i.ibb.co/CsVNJT1F/home-slider4.jpg',
+            'https://i.ibb.co/CsVNJT1F/home-slider4.jpg',
           ]),
           const SizedBox(height: 20),
           const Text(
