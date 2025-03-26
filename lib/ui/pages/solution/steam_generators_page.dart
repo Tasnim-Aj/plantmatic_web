@@ -91,7 +91,8 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                             // الصورة
                             Expanded(
                               child: Image.network(
-                                  'https://i.postimg.cc/pLJcN71D/steam1.png'),
+                                'https://i.ibb.co/nMxMCZXX/prod-svl-c028-generation-data-5400966.png',
+                              ),
                               // child: Image.asset(
                               //   'images/solution/steam1.png',
                               //   fit: BoxFit.cover,
@@ -106,7 +107,8 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                             // النص
                             Expanded(
                               child: Image.network(
-                                  'https://i.postimg.cc/T1xWXksD/steam2.png'),
+                                'https://i.ibb.co/HpNSFxjq/boiler-system.png',
+                              ),
                               // child:
                               //     Image.asset('images/solution/steam2.png'),
                             ),
@@ -163,7 +165,8 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                             ),
                             const SizedBox(height: 10),
                             Image.network(
-                                'https://i.postimg.cc/T1xWXksD/steam2.png')
+                              'https://i.ibb.co/bRP5KHZ4/Depositphotos-354285746-L.jpg',
+                            )
                             // Image.asset('images/solution/steam2.png'),
                           ],
                         ),
@@ -173,7 +176,8 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                           children: [
                             Expanded(
                               child: Image.network(
-                                  'https://i.postimg.cc/ZYfyQLcC/steam3.jpg'),
+                                'https://i.ibb.co/bRP5KHZ4/Depositphotos-354285746-L.jpg',
+                              ),
                               // child: Image.asset(
                               //   'images/solution/steam3.jpg', // مسار الصورة
                               //   fit: BoxFit.cover,
@@ -210,7 +214,6 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
     );
   }
 
-  // دالة مساعدة لإنشاء قسم
   Widget _buildSection({
     String? title,
     required List<String>? paragraphs,
@@ -234,7 +237,6 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // العنوان
           if (title != null)
             Text(
               title,
@@ -244,8 +246,7 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                 color: CustomColor.primaryColor,
               ),
             ),
-          const SizedBox(height: 16), // مسافة بين العنوان والنص
-          // الفقرات
+          const SizedBox(height: 16),
           for (var paragraph in paragraphs!)
             Padding(
               padding: const EdgeInsets.only(bottom: 8),
@@ -258,7 +259,6 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
                 ),
               ),
             ),
-          // القائمة
           ListView(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
@@ -266,7 +266,6 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
               for (var item in listItems) _buildListItem(item),
             ],
           ),
-          // الفقرة النهائية (إذا كانت موجودة)
           if (finalParagraph != null)
             Padding(
               padding: const EdgeInsets.only(top: 16),
@@ -284,7 +283,6 @@ class _SteamGeneratorsPageState extends State<SteamGeneratorsPage> {
     );
   }
 
-  // دالة مساعدة لإنشاء عناصر القائمة
   Widget _buildListItem(String text) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
