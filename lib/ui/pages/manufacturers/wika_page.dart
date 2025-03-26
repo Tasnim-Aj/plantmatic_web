@@ -55,15 +55,20 @@ class _WikaPageState extends State<WikaPage> {
               Stack(
                 alignment: Alignment.center,
                 children: [
-                  Image.asset(
-                    'images/manufacturers/wika_logo.png',
+                  Image.network(
+                    // height: 380,
+                    // width: double.infinity,
+                    // 'https://i.ibb.co/QFxrHY6R/home-page-welcome-wika-banner.png',
+                    'https://i.ibb.co/NgPJwfgC/1080x380-banner-advert.jpg',
+                    width: double.infinity,
+                    height: 400,
                     fit: BoxFit.cover,
+                    cacheWidth: 1920,
                   ),
                 ],
               ),
               const Padding(
-                padding:
-                    EdgeInsets.symmetric(vertical: 12.0, horizontal: 250),
+                padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 250),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
