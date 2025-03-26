@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plantmatic_web/ui/pages/solution/steam_generators_page.dart';
+import 'package:plantmatic_web/ui/pages/solution/tank_gauging_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: SteamGeneratorsPage(),
+      home: TankGaugingPage(),
 
       // initialRoute: '/',
       // routes: {

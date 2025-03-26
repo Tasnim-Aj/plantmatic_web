@@ -82,10 +82,9 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
                               ),
                             ),
                             const SizedBox(width: 16), // مسافة بين النص والصورة
-                            // الصورة
                             Expanded(
                               child: Image.network(
-                                'https://i.postimg.cc/TwLKbzzm/curso-rosemount-tank-gauging-esquema-scaled.jpg',
+                                'https://i.ibb.co/WpgdGRZ5/curso-rosemount-tank-gauging-esquema-scaled.jpg',
                                 fit: BoxFit.cover,
                               ),
                               // child: Image.asset(
@@ -105,7 +104,7 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
                           children: [
                             Expanded(
                               child: Image.network(
-                                'https://i.postimg.cc/nLwsCFPp/engineer-s-guide-to-tank-gauging-en-175314.jpg',
+                                'https://i.ibb.co/whPNw4tM/engineer-s-guide-to-tank-gauging-en-175314.jpg',
                               ),
                               // Image.asset('images/solution/tank_2.jpg'),
                             ),
@@ -170,7 +169,8 @@ class _TankGaugingPageState extends State<TankGaugingPage> {
                             const SizedBox(width: 16),
                             Expanded(
                               child: Image.network(
-                                  'https://i.postimg.cc/1z4Xhx5T/prod-rmt-tank-storage-floating-roof-monitoring-data-6751870.png'),
+                                'https://i.ibb.co/XrdZgM5b/prod-rmt-tank-storage-floating-roof-monitoring-data-6751870.png',
+                              ),
                               // Image.asset('images/solution/tank_3.png'),
                             ),
                           ],
