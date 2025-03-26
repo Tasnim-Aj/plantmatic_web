@@ -62,26 +62,25 @@ class _ManufacturersSectionState extends State<ManufacturersSection> {
         runSpacing: 20,
         children: [
           ManufacturerCard(
-            companyImage: 'images/manufacturers/wika_logo.png',
+            companyImage: 'https://i.ibb.co/84mg2tBL/WIKA.png',
             detailsPageRoute: '/wikaDetails',
           ),
           ManufacturerCard(
-            companyImage: 'images/manufacturers/siemens_logo.png',
+            companyImage: 'https://i.ibb.co/mCvtYR1P/Siemens-Logo.png',
             detailsPageRoute: '/siemensDetails',
           ),
           ManufacturerCard(
-            companyImage: 'images/manufacturers/schneider.png',
+            companyImage: 'https://i.ibb.co/F4HSm2Tq/images.png',
             detailsPageRoute: '/schneiderDetails',
           ),
           ManufacturerCard(
-            companyImage: 'images/manufacturers/VEGA.png',
+            companyImage: 'https://i.ibb.co/jv46bj3d/VEGA.png',
             detailsPageRoute: '/vegaDetails',
           ),
           ManufacturerCard(
-            companyImage: 'images/manufacturers/OMC.jpg',
+            companyImage: 'https://i.ibb.co/1fF0gvKG/OMC.jpg',
             detailsPageRoute: '/omcDetails',
           ),
-          // إضافة المزيد من البطاقات هنا
         ],
       ),
     );
@@ -94,9 +93,9 @@ class _ManufacturersSectionState extends State<ManufacturersSection> {
         runSpacing: 20,
         children: [
           for (var imagePath in [
-            'images/manufacturers/ABB.png',
-            'images/manufacturers/nirmal_logo.png',
-            'images/manufacturers/audco_logo.jpg',
+            'https://i.ibb.co/rGym1fMT/ABB.png',
+            'https://i.ibb.co/Lz7pcz9K/NIRMAL-VALVES.png',
+            'https://i.ibb.co/Dg5ThsW1/AUDCO.jpg',
           ])
             _buildSimpleManufacturer(imagePath),
         ],
@@ -117,7 +116,7 @@ class _ManufacturersSectionState extends State<ManufacturersSection> {
           border: Border.all(color: Colors.grey.withOpacity(0.5), width: 1),
         ),
         child: Center(
-          child: Image.asset(companyImage, width: 100),
+          child: Image.network(companyImage, width: 100),
         ),
       ),
     );

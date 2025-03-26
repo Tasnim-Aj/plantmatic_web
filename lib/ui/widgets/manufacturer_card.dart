@@ -7,7 +7,8 @@ class ManufacturerCard extends StatefulWidget {
   final String companyImage;
   final String detailsPageRoute;
 
-  const ManufacturerCard({super.key, 
+  const ManufacturerCard({
+    super.key,
     required this.companyImage,
     required this.detailsPageRoute,
   });
@@ -51,7 +52,7 @@ class _ManufacturerCardState extends State<ManufacturerCard> {
             children: [
               Expanded(
                 child: Center(
-                  child: Image.asset(
+                  child: Image.network(
                     isHovered
                         ? "images/automation/automation1.png"
                         : widget.companyImage,
