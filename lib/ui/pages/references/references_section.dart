@@ -184,9 +184,12 @@ class ReferencesSection extends StatelessWidget {
         isLoop: true,
         autoPlayInterval: 5000,
         children: [
-          Image.asset('images/slider/home-slider4.jpg', fit: BoxFit.cover),
-          Image.asset('images/slider/home-slider4.jpg', fit: BoxFit.cover),
-          Image.asset('images/slider/home-slider4.jpg', fit: BoxFit.cover),
+          Image.network('https://i.ibb.co/CsVNJT1F/home-slider4.jpg'),
+          Image.network('https://i.ibb.co/CsVNJT1F/home-slider4.jpg'),
+          Image.network('https://i.ibb.co/CsVNJT1F/home-slider4.jpg'),
+          // Image.asset('images/slider/home-slider4.jpg', fit: BoxFit.cover),
+          // Image.asset('images/slider/home-slider4.jpg', fit: BoxFit.cover),
+          // Image.asset('images/slider/home-slider4.jpg', fit: BoxFit.cover),
         ],
       ),
     );
